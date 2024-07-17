@@ -438,7 +438,7 @@
       <note>Framework element - makes batch_id, ip and hostname available as variables to the framework</note>
       <xloc>32</xloc>
       <yloc>32</yloc>
-      <width>509</width>
+      <width>584</width>
       <heigth>26</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
@@ -557,6 +557,7 @@
       </field>
     </fields>
     <use_formatting>Y</use_formatting>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -599,6 +600,7 @@
         <type>Current PID</type>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -607,7 +609,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>64</xloc>
+      <xloc>48</xloc>
       <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
@@ -642,6 +644,7 @@
         <name>pid</name>
       </field>
     </fields>
+    <attributes/>
     <cluster_schema/>
     <remotesteps>
       <input>

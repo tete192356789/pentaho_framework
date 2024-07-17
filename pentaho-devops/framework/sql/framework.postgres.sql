@@ -1,10 +1,10 @@
 /* framework tables */
-drop database if exists LOCAL;
-CREATE DATABASE LOCAL WITH OWNER = postgres ENCODING = 'UTF8' TABLESPACE = pg_default;
+drop database if exists local;
+CREATE DATABASE local WITH OWNER = postgres ENCODING = 'UTF8' TABLESPACE = pg_default;
 
 	/* Once connected to a database: */
 
-\connect LOCAL;
+\connect local;
 
 CREATE SCHEMA pdi_control AUTHORIZATION postgres;
 

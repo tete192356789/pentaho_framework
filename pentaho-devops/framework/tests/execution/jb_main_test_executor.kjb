@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
   <name>jb_main_test_executor</name>
-  <description />
-  <extended_description />
-  <job_version />
+  <description/>
+  <extended_description/>
+  <job_version/>
   <job_status>0</job_status>
   <directory>/</directory>
   <created_user>-</created_user>
@@ -14,7 +14,7 @@
     <parameter>
       <name>P_PROJECT_NAME</name>
       <default_value>sales_dwh</default_value>
-      <description />
+      <description/>
     </parameter>
   </parameters>
   <connection>
@@ -25,10 +25,10 @@
     <database>${PDI_LOGGING.DB}</database>
     <port>${PDI_LOGGING.PORT}</port>
     <username>${PDI_LOGGING.USER}</username>
-    <password>${PDI_LOGGING.PASS}</password>
-    <servername />
-    <data_tablespace />
-    <index_tablespace />
+    <password>Encrypted 2be98afc86aa7f2e4bb16bd64d980aac9</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
     <attributes>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
@@ -71,12 +71,12 @@
   <slaveservers>
     </slaveservers>
   <job-log-table>
-    <connection />
-    <schema />
-    <table />
-    <size_limit_lines />
-    <interval />
-    <timeout_days />
+    <connection/>
+    <schema/>
+    <table/>
+    <size_limit_lines/>
+    <interval/>
+    <timeout_days/>
     <field>
       <id>ID_JOB</id>
       <enabled>Y</enabled>
@@ -184,10 +184,10 @@
     </field>
   </job-log-table>
   <jobentry-log-table>
-    <connection />
-    <schema />
-    <table />
-    <timeout_days />
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
     <field>
       <id>ID_BATCH</id>
       <enabled>Y</enabled>
@@ -275,10 +275,10 @@
     </field>
   </jobentry-log-table>
   <channel-log-table>
-    <connection />
-    <schema />
-    <table />
-    <timeout_days />
+    <connection/>
+    <schema/>
+    <table/>
+    <timeout_days/>
     <field>
       <id>ID_BATCH</id>
       <enabled>Y</enabled>
@@ -340,81 +340,14 @@
       <name>ROOT_CHANNEL_ID</name>
     </field>
   </channel-log-table>
-  <checkpoint-log-table>
-    <connection />
-    <schema />
-    <table />
-    <timeout_days />
-    <max_nr_retries />
-    <run_retry_period />
-    <namespace_parameter />
-    <save_parameters>Y</save_parameters>
-    <save_result_rows>Y</save_result_rows>
-    <save_result_files>Y</save_result_files>
-    <field>
-      <id>ID_JOB_RUN</id>
-      <enabled>Y</enabled>
-      <name>ID_JOB_RUN</name>
-    </field>
-    <field>
-      <id>ID_JOB</id>
-      <enabled>Y</enabled>
-      <name>ID_JOB</name>
-    </field>
-    <field>
-      <id>JOBNAME</id>
-      <enabled>Y</enabled>
-      <name>JOBNAME</name>
-    </field>
-    <field>
-      <id>NAMESPACE</id>
-      <enabled>Y</enabled>
-      <name>NAMESPACE</name>
-    </field>
-    <field>
-      <id>CHECKPOINT_NAME</id>
-      <enabled>Y</enabled>
-      <name>CHECKPOINT_NAME</name>
-    </field>
-    <field>
-      <id>CHECKPOINT_COPYNR</id>
-      <enabled>Y</enabled>
-      <name>CHECKPOINT_COPYNR</name>
-    </field>
-    <field>
-      <id>ATTEMPT_NR</id>
-      <enabled>Y</enabled>
-      <name>ATTEMPT_NR</name>
-    </field>
-    <field>
-      <id>JOB_RUN_START_DATE</id>
-      <enabled>Y</enabled>
-      <name>JOB_RUN_START_DATE</name>
-    </field>
-    <field>
-      <id>LOGDATE</id>
-      <enabled>Y</enabled>
-      <name>LOGDATE</name>
-    </field>
-    <field>
-      <id>RESULT_XML</id>
-      <enabled>Y</enabled>
-      <name>RESULT_XML</name>
-    </field>
-    <field>
-      <id>PARAMETER_XML</id>
-      <enabled>Y</enabled>
-      <name>PARAMETER_XML</name>
-    </field>
-  </checkpoint-log-table>
   <pass_batchid>Y</pass_batchid>
-  <shared_objects_file />
+  <shared_objects_file/>
   <entries>
     <entry>
       <name>START</name>
-      <description />
+      <description/>
       <type>SPECIAL</type>
-      <attributes />
+      <attributes/>
       <start>Y</start>
       <dummy>N</dummy>
       <repeat>N</repeat>
@@ -430,79 +363,81 @@
       <nr>0</nr>
       <xloc>96</xloc>
       <yloc>64</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>tr_test_executor</name>
-      <description />
+      <description/>
       <type>TRANS</type>
-      <attributes />
+      <attributes/>
       <specification_method>filename</specification_method>
-      <trans_object_id />
+      <trans_object_id/>
       <filename>${FRAMEWORK_DIR}/tests/execution/tr_test_executor.ktr</filename>
-      <transname />
+      <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
       <clear_files>N</clear_files>
       <set_logfile>N</set_logfile>
-      <logfile />
-      <logext />
+      <logfile/>
+      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
       <loglevel>Basic</loglevel>
       <cluster>N</cluster>
-      <slave_server_name />
+      <slave_server_name/>
       <set_append_logfile>N</set_append_logfile>
       <wait_until_finished>Y</wait_until_finished>
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
         <parameter>
           <name>P_PROJECT_NAME</name>
-          <stream_name />
+          <stream_name/>
           <value>${P_PROJECT_NAME}</value>
         </parameter>
       </parameters>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>576</xloc>
+      <xloc>560</xloc>
       <yloc>64</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>tr_log_batch_id</name>
-      <description />
+      <description/>
       <type>TRANS</type>
-      <attributes />
+      <attributes/>
       <specification_method>filename</specification_method>
-      <trans_object_id />
+      <trans_object_id/>
       <filename>${FRAMEWORK_HOME}/control/tr_log_batch_id.ktr</filename>
-      <transname />
+      <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
       <clear_files>N</clear_files>
       <set_logfile>N</set_logfile>
-      <logfile />
-      <logext />
+      <logfile/>
+      <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
       <loglevel>Basic</loglevel>
       <cluster>N</cluster>
-      <slave_server_name />
+      <slave_server_name/>
       <set_append_logfile>N</set_append_logfile>
       <wait_until_finished>Y</wait_until_finished>
       <follow_abort_remote>N</follow_abort_remote>
       <create_parent_folder>N</create_parent_folder>
       <logging_remote_work>N</logging_remote_work>
       <run_configuration>Pentaho local</run_configuration>
+      <suppress_result_data>N</suppress_result_data>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
@@ -511,13 +446,13 @@
       <nr>0</nr>
       <xloc>256</xloc>
       <yloc>64</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
     <entry>
       <name>sv-test.properties</name>
-      <description />
+      <description/>
       <type>SET_VARIABLES</type>
-      <attributes />
+      <attributes/>
       <replacevars>Y</replacevars>
       <filename>${ROOT_DIR}/${P_PROJECT_NAME}-configuration/${PROJECT_ENV}/properties/test.properties</filename>
       <file_variable_type>ROOT_JOB</file_variable_type>
@@ -528,7 +463,7 @@
       <nr>0</nr>
       <xloc>416</xloc>
       <yloc>64</yloc>
-      <attributes_kjc />
+      <attributes_kjc/>
     </entry>
   </entries>
   <hops>
