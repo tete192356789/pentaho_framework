@@ -6,7 +6,7 @@ PROJECT_ENV="${PROJECT_ENV:-config-pdi-local}"
 
 echo "***" Setting ROOT_DIR to "$ROOT_DIR" "***"
 echo "***" Running with "$PROJECT_ENV" environment settings "***"
-
+echo "##########" "$PWD"
 # Load Environment Configuration
 #. $ROOT_DIR/$PROJECT_NAME-configuration/$PROJECT_ENV/env.conf
 . $BASE_CONFIG_DIR/env.linux.conf
