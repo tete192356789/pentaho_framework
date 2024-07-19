@@ -545,21 +545,6 @@
       <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
-    <entry>
-      <name>wtl-missing_framework_properties</name>
-      <description/>
-      <type>WRITE_TO_LOG</type>
-      <attributes/>
-      <logmessage>Missing framework.properties file</logmessage>
-      <loglevel>Minimal</loglevel>
-      <logsubject>*** ERROR: LOAD PROJECT ENVIRONMENT ***</logsubject>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>1</nr>
-      <xloc>384</xloc>
-      <yloc>240</yloc>
-      <attributes_kjc/>
-    </entry>
   </entries>
   <hops>
     <hop>
@@ -668,15 +653,6 @@
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>sv-V_JOB_NAME</from>
-      <to>wtl-missing_framework_properties</to>
-      <from_nr>0</from_nr>
-      <to_nr>1</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
       <unconditional>N</unconditional>
     </hop>
   </hops>
