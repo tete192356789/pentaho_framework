@@ -574,7 +574,7 @@
     <hop>
       <from>result and xml tag</from>
       <to>Text file output</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
   </order>
   <step>
